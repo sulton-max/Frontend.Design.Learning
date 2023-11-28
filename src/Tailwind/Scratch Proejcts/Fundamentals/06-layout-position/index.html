@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
+<body>
+<!-- Positioning -->
+<div class="relative w-[500px] h-[500px] bg-yellow-300">
+  <!-- Top left corner -->
+  <div class="absolute w-24 h-24 bg-yellow-600 top-0 left-0 text-center text-white">Top left</div>
+
+  <!-- Top right corner -->
+  <div class="absolute w-24 h-24 bg-yellow-600 top-0 right-0 text-center text-white">Top right</div>
+
+  <!-- Bottom left corner -->
+  <div class="absolute w-24 h-24 bg-yellow-600 bottom-0 left-0 text-center text-white">Bottom left</div>
+
+  <!-- Bottom right corner -->
+  <div class="absolute w-24 h-24 bg-yellow-600 bottom-0 right-0 text-center text-white">Bottom right</div>
+</div>
+
+<div class="relative w-[500px] h-[500px] bg-yellow-300 mt-24">
+  <!-- Span top edge -->
+  <div class="absolute h-24 bg-yellow-600 inset-x-48 top-0 text-center text-white">Top Span</div>
+
+  <!-- Span left edge -->
+  <div class="absolute h-24 bg-yellow-600 inset-x-48 bottom-0 text-center text-white">Bottom Span</div>
+
+  <!-- Span right edge -->
+  <div class="absolute w-24 bg-yellow-600 inset-y-48 left-0 text-center text-white">Left Span</div>
+
+  <!-- Span bottom edge -->
+  <div class="absolute w-24 bg-yellow-600 inset-y-48 right-0 text-center text-white">Right Span</div>
+</div>
+
+<!-- Display Classes -->
+<p>Lorem ipsum dolor sit amet,
+  <div class="inline"
+       consectetur
+       adipisicing
+       elit.
+       Aperiam
+       asperiores
+</p>
+consequuntur deserunt eligendi est ex facilis id omnis quaerat repellendus sed, vel
+<div class="inline-block"> veniam, veritatis? A doloribus
+  hic labore,
+</div>
+minima provident
+<div class="hidden"> quia repellat! Aspernatur culpa cum cumque, dolor doloribus
+</div>
+exercitationem illum inventore iste maiores nesciunt nihil
+quo quos repellendus rerum saepe.</div>
+
+
+<!-- Z-Index -->
+<div class="relative w-96 h-96">
+  <div class="absolute w-24 h-24 top-0 left-0 bg-blue-100 z-0"></div>
+  <div class="absolute w-24 h-24 top-10 left-10 bg-blue-200 z-10"></div>
+  <div class="absolute w-24 h-24 top-20 left-20 bg-blue-300 z-20"></div>
+  <div class="absolute w-24 h-24 top-[120px] left-[120px] bg-blue-400 z-20"></div>
+  <div class="absolute w-24 h-24 top-40 left-40 bg-blue-500 z-40"></div>
+</div>
+
+
+<!-- Floats -->
+</body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->

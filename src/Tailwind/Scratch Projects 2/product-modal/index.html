@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Product Modal</title>
+</head>
+<body>
+
+<!-- Container -->
+<div class="min-h-screen flex items-center justify-center bg-slate-100">
+
+  <!-- Product Card -->
+  <div
+    class="flex flex-col p-6 space-y-10 md:flex-row md:space-y-0 md:space-x-10 md:p-16 bg-white rounded-2xl shadow-2xl">
+
+    <!-- Product View -->
+    <div class="hover:scale-105 duration-150">
+      <img src="./images/headphone.png"
+           alt=""
+           class="w-60 mx-auto">
+    </div>
+
+    <!-- Content -->
+    <div class="flex flex-col space-y-3 items-center max-w-sm md:items-start">
+
+      <!-- Badge Chips -->
+      <div>
+        <div class="py-1 px-3 rounded-full bg-black text-white text-sm">Free Shipping</div>
+      </div>
+
+      <!-- Title -->
+      <div class="text-2xl font-medium text-center md:text-left">Razer Kraken Kitty Edit Gaming Headset
+        Quartz
+      </div>
+
+      <!-- Prices -->
+      <p class="line-through">$799</p>
+      <p class="text-5xl font-bold">$599</p>
+      <p class="text-slate-400 text-sm">This offer is valid until April 3rd or as long as stock lasts</p>
+
+      <!-- Actions -->
+      <div class="w-full group">
+        <button
+          class="w-full px-8 py-4 bg-blue-500 text-white border-b-8 border-blue-700 rounded-lg hover:border-b-0 hover:border-t-8 hover:bg-blue-700 hover:shadow-lg transition-all duration-150">
+          Add to cart
+        </button>
+
+        <div class="mt-2 flex items-center space-x-2">
+          <div class="w-3 h-3 rounded-full bg-green-500 group-hover:animate-ping"></div>
+          <p class="text-sm">50+ pcs. in stock</p>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+        <button
+          class="w-full py-4 flex items-center justify-center space-x-2 border-2 border-slate-300 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition duration-150">
+          <img src="./images/weight.png"
+               alt=""
+               class="w-8">
+          <span>Add to cart</span>
+        </button>
+        <button
+          class="w-full py-4 flex items-center justify-center space-x-2 border-2 border-slate-300 rounded-lg shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition duration-150">
+          <img src="./images/heart.png"
+               alt=""
+               class="w-8">
+          <span>Add to wishlist</span>
+        </button>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+</body>
+</html>

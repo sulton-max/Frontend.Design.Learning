@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="../build%20old/css/style.css"/>
+</head>
+<body class="bg-[#0f172a] p-20" dark>
+<h1 class="label">Core Concepts</h1>
+
+<h5 class="label">Simple hover</h5>
+<div class="card">
+  <button class="btn bg-sky-500 hover:bg-sky-700">Save changes</button>
+</div>
+
+<h5 class="label">Hover, focus and active</h5>
+<div class="card">
+  <button
+    class="btn bg-violet-500 hover:bg-violet-800 active:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-200"
+  >
+    Save changes
+  </button>
+</div>
+
+<h5 class="label">First, last, odd and even</h5>
+<ul class="card p-0">
+  <li class="li first:bg-opacity-5 last:bg-opacity-5">
+    <img
+      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">kristen.ramos@example.com</p>
+    </div>
+  </li>
+  <li class="li odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li last:bg-opacity-10">
+    <img
+      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last">floyd.miles@example.com</p>
+    </div>
+  </li>
+</ul>
+
+<h5 class="label">Form states</h5>
+<div class="card">
+  <label class="text-slate-500 text-left w-full" for="valid-input">Valid input</label>
+  <input
+    id="valid-input"
+    type="text"
+    class="input text-slate-200
+        focus:outline-none focus:border-sky-500 
+        disabled:bg-gray-500 disabled:bg-opacity-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+  />
+  <label class="mt-5 text-slate-500 text-left w-full" for="invalid-input">Invalid input</label>
+  <input
+    id="invalid-input"
+    type="text"
+    class="input invalid text-slate-200
+        focus:outline-none focus:border-sky-500
+        disabled:bg-gray-500 disabled:bg-opacity-50 disabled:text-slate-500 disabled:border-slate-200 disabed:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+  />
+  <label class="mt-5 text-slate-500 text-left w-full" for="disabled-input">Disabled input</label>
+  <input
+    id="disabled-input"
+    type="text"
+    disabled
+    class="input text-slate-200
+        focus:outline-none focus:border-sky-500
+        disabled:bg-gray-500 disabled:bg-opacity-50 disabled:text-slate-500 disabled:border-slate-200 disabed:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+  />
+  <label class="mt-5 text-slate-500 text-left w-full" for="required-input">Required input</label>
+  <input
+    id="required-input"
+    type="text"
+    disabled
+    class="input text-slate-200
+        focus:outline-none focus:border-sky-500
+        disabled:bg-gray-500 disabled:bg-opacity-50 disabled:text-slate-500 disabled:border-slate-200 disabed:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+  />
+  <label class="mt-5 text-slate-500 text-left w-full" for="readonly-input">Readonly input</label>
+  <input
+    id="readonly-input"
+    type="text"
+    disabled
+    class="input text-slate-200
+        focus:outline-none focus:border-sky-500
+        disabled:bg-gray-500 disabled:bg-opacity-50 disabled:text-slate-500 disabled:border-slate-200 disabed:shadow-none
+        invalid:border-pink-500 invalid:text-pink-600
+        focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+  />
+</div>
+
+<h5 class="label">Styling based on parent data</h5>
+<ul class="card p-0">
+  <li class="li group odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover:text-opacity-100">kristen.ramos@example.com</p>
+    </div>
+  </li>
+  <li class="li group odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li group odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li group odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+</ul>
+
+<h5 class="label">Differentiating nested groups</h5>
+<ul class="card p-0 group/container">
+  <li class="li group-hover/container:p-6 group/item odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover/item:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover/item:text-opacity-100">kristen.ramos@example.com</p>
+    </div>
+  </li>
+  <li class="li group-hover/container:p-6 group/item odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover/item:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover/item:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li group-hover/container:p-6 group/item odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover/item:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover/item:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+  <li class="li group-hover/container:p-6 group/item odd:bg-opacity-20 even:bg-opacity-40">
+    <img
+      src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt=""
+      class="pfp ring-[6px] ring-transparent group-hover/item:ring-slate-500"
+    />
+    <div class="ml-3 overflow-hidden">
+      <p class="p-first">Kristen Ramos</p>
+      <p class="p-last text-opacity-0 group-hover/item:text-opacity-100">floyd.miles@example.com</p>
+    </div>
+  </li>
+</ul>
+
+<h5 class="label">Arbitrary groups</h5>
+<div class="card">
+  <div class="group is-published">
+    <div
+      class="hidden group-[.is-published]:block text-slate-200 p-2 px-5 border-1 border-slate-200 bg-gray-50 bg-opacity-20">
+      Element A
+    </div>
+  </div>
+  <div class="group is-edited">
+    <div class="hidden group-[.is-published]:block">
+      Element B
+    </div>
+  </div>
+</div>
+
+<h5 class="label">Styling based on sibling state</h5>
+<div class="card">
+  <label class="mt-5 text-slate-500 text-left w-full" for="email-input">Email</label>
+  <input
+    id="email-input"
+    type="email"
+    required
+    class="peer input text-slate-200 invalid
+        focus:outline-none focus:border-sky-500" value="example.com"
+  />
+  <span class="invisible peer-invalid:visible w-full text-red-500">Invalid email</span>
+</div>
+
+<h5 class="label">Differentiating peers</h5>
+<div class="card">
+  <form action="">
+    <div class="flex">
+
+      <label class="flex items-center mr-10">
+        <input type="radio" class="invisible w-0 h-0 peer/draft">
+        <span
+          class="inline-block relative w-5 h-5 mr-2 border-2 before-content rounded-full border-slate-500  before-centered before:h-3 before:w-3 before:rounded-full before:bg-slate-500 peer-checked/draft:border-sky-500">
+      </span>
+        <span class="text-slate-500 peer-checked/draft:text-sky-500">Draft</span>
+      </label>
+
+      <label class="flex items-center mr-10">
+        <input type="radio" class="invisible w-0 h-0 peer/published">
+        <span
+          class="inline-block relative w-5 h-5 mr-2 border-2 before-content rounded-full border-slate-500  before-centered before:h-3 before:w-3 before:rounded-full before:bg-slate-500 peer-checked/published:border-sky-500 before:bg-transparent">
+      </span>
+        <span class="text-slate-500 peer-checked/published:text-sky-500">Published</span>
+      </label>
+    </div>
+  </form>
+</div>
+
+<h5 class="label">Before and after</h5>
+<div class="card">
+  <label class="w-full">
+    <span class="text-slate-500 after:content-['*'] after:text-red-500 after:ml-2">Email</span>
+    <input type="text" class="input focus:outline-none focus:border-sky-500">
+  </label>
+</div>
+
+<h5 class="label">Placeholder</h5>
+<div class="card">
+  <label class="w-full">
+    <input type="text"
+           class="input focus:outline-none focus:border-sky-500 placeholder:text-slate-500 placeholder:font-light"
+           placeholder="example@gmail.com">
+  </label>
+</div>
+
+<h5 class="label">File input buttons</h5>
+<div class="card">
+  <div class="flex justify-between">
+    <label class="w-full">
+      <span class="text-slate-500 text-sm">Your resume : </span>
+      <input type="file"
+             class="text-slate-500 file:text-sm file:rounded-full file:border-0 file:bg-violet-600 file:text-white file:py-2 file:px-4">
+    </label>
+  </div>
+</div>
+
+<h5 class="label">List markers</h5>
+<div class="card">
+  <span class="text-slate-500">Ingredients</span>
+  <ul class="list-disc marker:text-sky-500 text-slate-500">
+    <li>5 cups chopped Porcini mushrooms</li>
+    <li>1/2 cup of olive oil</li>
+    <li>3lb of celery</li>
+  </ul>
+</div>
+
+<h5 class="label">Highlighting text</h5>
+<div class="card">
+  <p class="block max-w-sm text-sm text-slate-500 selection:bg-fuchsia-300 selection:text-fuchsia-900">So I started to
+    walk into
+    the
+    water. I
+    won't
+    lie to you
+    boys, I was
+    terrified. But I
+    pressed
+    on,
+    and as I
+    made my
+    way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all
+    living things but I tell you Jerry at that moment, I was a marine biologist.</p>
+</div>
+
+<h5 class="label">First line and first letter</h5>
+<div class="card">
+  <p class="block max-w-sm text-sm text-slate-500 selection:bg-fuchsia-300 selection:text-fuchsia-900
+    first-line:text-slate-300 first-letter:text-4xl
+">So I started to
+    walk into
+    the
+    water. I
+    won't
+    lie to you
+    boys, I was
+    terrified. But I
+    pressed
+    on,
+    and as I
+    made my
+    way past the breakers a strange calm came over me. I don't know if it was divine intervention or the kinship of all
+    living things but I tell you Jerry at that moment, I was a marine biologist.</p>
+</div>
+
+<h5 class="label">Dialog backdrop</h5>
+<div class="card">
+  <dialog class="bg-gray-50 bg-opacity-10 backdrop:bg-gray-100" open>
+    <form action="">
+      <p class="text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, unde?</p>
+    </form>
+  </dialog>
+</div>
+
+<h5 class="label">Responsive breakpoints</h5>
+<div class="card">
+  <div class="grid grid-cols-2 gap-1 md:md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-5">
+    <div class="card mb-0 p-5 flex items-start">
+      <div class="bg-violet-500 rounded-lg h-10 w-10"></div>
+      <p class="text-slate-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nulla!</p>
+    </div>
+    <div class="card mb-0 p-5 flex items-start">
+      <div class="bg-violet-500 rounded-lg h-10 w-10"></div>
+      <p class="text-slate-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nulla!</p>
+    </div>
+    <div class="card mb-0 p-5 flex items-start">
+      <div class="bg-violet-500 rounded-lg h-10 w-10"></div>
+      <p class="text-slate-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nulla!</p>
+    </div>
+    <div class="card mb-0 p-5 flex items-start">
+      <div class="bg-violet-500 rounded-lg h-10 w-10"></div>
+      <p class="text-slate-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, nulla!</p>
+    </div>
+  </div>
+</div>
+
+<h5 class="label">Prefers color scheme</h5>
+<div class="card" dark>
+  <div class="card bg-slate-200 dark:bg-transparent mb-0 p-5 flex items-start max-w-sm space-y-5">
+    <div class="bg-violet-500 rounded-lg h-10 w-10"></div>
+    <h5 class="text-slate-900 dark:text-slate-200">Writes Upside-Down</h5>
+    <p class="text-sm text-slate-500">The Zero Gravity Pen can be used to write in any orientation, including
+      upside-down. It even works in
+      outer
+      space.</p>
+  </div>
+</div>
+
+<h5 class="label">Prefers reduced motion</h5>
+<div class="card space-y-6">
+  <div class="bg-violet-500 rounded-lg flex items-center space-x-2 p-2 px-5">
+    <img src="../assets/icons8-loading-sign-96.png" alt="" class="motion-reduce:hidden animate-spin h-6 w-6">
+    <span class="text-slate-100 text-sm">Processing ...</span>
+  </div>
+  <div class="bg-violet-500 rounded-lg flex items-center space-x-2 p-2 px-5">
+    <img src="../assets/icons8-loading-sign-96.png" alt="" class="motion-safe:animate-spin h-6 w-6">
+    <span class="text-slate-100 text-sm">Processing ...</span>
+  </div>
+</div>
+
+<h5 class="label">Prefers contrast</h5>
+<div class="card space-y-6">
+  <label for="ssn" class="text-slate-200">Social Security Number</label>
+  <input id="ssn" type="text"
+         class="input focus:outline-none focus:border-sky-500 contrast-less:border-slate-300 text-slate-300">
+</div>
+
+<h5 class="label">Viewport orientation</h5>
+<div class="card space-y-6">
+  <div class="hidden portrait:block">
+    <p class="text-slate-500">This is portrait experience. Rotate to see landscape experience</p>
+  </div>
+  <div class="hidden landscape:block">
+    <p class="text-slate-500">This is landscape experience. Rotate to see portrait experience</p>
+  </div>
+</div>
+
+<h5 class="label">Print styles</h5>
+<div class="card space-y-6">
+  <div class="print:hidden">
+    <p class="text-slate-500">My Secret Pizza Recipe</p>
+  </div>
+  <div class="print:block">
+    <p class="text-slate-500">Are you seriously trying to print this ? It's a secret</p>
+  </div>
+</div>
+
+<h5 class="label">Supports rules</h5>
+<div class="card space-y-6">
+  <div class="bg-violet-500 rounded-lg flex items-center space-x-2 p-2 px-5 supports-[hover]:hover:bg-violet-800">
+    <span class="text-slate-100 text-sm">Support for hover ?</span>
+  </div>
+</div>
+
+<h5 class="label">ARIA states</h5>
+<div class="card">
+  <div class="grid grid-cols-2 gap-1 md:md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-5">
+    <div class="card mb-0 p-5 flex items-start group aria-selected:bg-violet-500" aria-selected="true">
+      <div class="bg-violet-500 rounded-lg h-10 w-10 group-aria-selected:bg-violet-800"></div>
+      <p class="text-slate-500 mt-5 group-aria-selected:text-slate-200">Lorem ipsum dolor sit amet, consectetur
+        adipisicing
+        elit.
+        Adipisci,
+        nulla!</p>
+    </div>
+  </div>
+</div>
+
+<h5 class="label">Data attributes</h5>
+<div class="card">
+  <div class="grid grid-cols-2 gap-1 md:md:grid-cols-3 md:gap-2 lg:grid-cols-4 lg:gap-5">
+    <div data-size="large"
+         class="card mb-0 p-10 flex items-start group aria-selected:bg-violet-500 data-[size=large]:p-5"
+         aria-selected="true">
+      <div class="bg-violet-500 rounded-lg h-10 w-10 group-aria-selected:bg-violet-800"></div>
+      <p class="text-slate-500 mt-5 group-aria-selected:text-slate-200">Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Aliquid aspernatur delectus eaque fugiat id, pariatur quibusdam quidem quos. Amet architecto,
+        consequuntur deserunt dignissimos doloribus fuga iure minus nesciunt perferendis quaerat quam sed veniam
+        voluptate? Aperiam assumenda laboriosam minus molestias qui.</p>
+    </div>
+    <div data-size="medium"
+         class="card mb-0 p-10 flex items-start group aria-selected:bg-violet-500 data-[size=large]:p-5"
+         aria-selected="true">
+      <div class="bg-violet-500 rounded-lg h-10 w-10 group-aria-selected:bg-violet-800"></div>
+      <p class="text-slate-500 mt-5 group-aria-selected:text-slate-200">Lorem ipsum dolor sit amet, consectetur
+        adipisicing
+        elit.
+        Adipisci,
+        nulla!</p>
+    </div>
+  </div>
+</div>
+
+<h5 class="label">RTL support</h5>
+<div class="card flex space-x-40">
+  <div class="group flex items-center max-w-sm" dir="ltr">
+    <img
+      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt="" class="shrink-0 h-12 w-12 rounded-full">
+    <div class="ltr:ml-3 rtl:mr-3">
+      <p class="text-slate-500 group-rtl:text-slate-200">Tom Cook</p>
+      <p class="text-slate-500 group-rtl:text-slate-200 text-sm">Director of Operations</p>
+    </div>
+  </div>
+  <div class="group flex items-center max-w-sm" dir="rtl">
+    <img
+      src="https://images.unsplash.com/photo-1563833717765-00462801314e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt="" class="shrink-0 h-12 w-12 rounded-full">
+    <div class="ltr:ml-3 rtl:mr-3">
+      <p class="text-slate-500 group-rtl:text-slate-200">تامر كرم</p>
+      <p class="text-slate-500 group-rtl:text-slate-200 text-sm">الرئيس التنفيذي</p>
+    </div>
+  </div>
+</div>
+
+<h5 class="label">RTL support</h5>
+<div class="card flex space-x-40" dark>
+  <details
+    class="open:bg-slate-900 open:ring-1 open:ring-white/10 open:shadow-lg p-6 rounded-lg"
+    open>
+    <summary class="text-sm leading-6 text-slate-200 font-semibold select-none">
+      Why do they call it Ovaltine?
+    </summary>
+    <div class="mt-3 text-sm leading-6 text-slate-400">
+      <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+    </div>
+  </details>
+</div>
+
+<h5 class="label">Using arbitrary variants</h5>
+<div class="card {&_p}:text-slate-800">
+  <p class="text-slate-300">This is a paragraph</p>
+  <p class="text-slate-300">This is also a paragraph</p>
+  <p class="text-slate-300">This is also a paragraph</p>
+</div>
+
+<h5 class="label">Pseudo-class reference</h5>
+<div class="card {&_p}:text-slate-800">
+  <p class="text-slate-500 text-lg">Hover</p>
+  <button class="btn bg-violet-600 hover:bg-violet-900">Click Me</button>
+
+  <p class="text-slate-500 text-lg mt-10">Focus</p>
+  <button
+    class="btn bg-violet-600 hover:bg-violet-900 border border-violet-600 hover:border-violet-900 focus:border-slate-300">
+    Click Me
+  </button>
+
+  <p class="text-slate-500 text-lg mt-10">Focus Within</p>
+  <div
+    class="card mb-0 p-10 flex items-start :bg-violet-500 space-y-2 max-w-sm focus-within:border-sky-500">
+    <div class="bg-violet-500 rounded-lg h-10 w-10 group-aria-selected:bg-violet-800"></div>
+    <p class="text-slate-500 group-aria-selected:text-slate-200">Lorem ipsum dolor sit amet, consectetur
+      adipisicing
+      elit.
+      Adipisci,
+      nulla!</p>
+    <button
+      class="btn bg-violet-600 hover:bg-violet-900 border border-violet-600 hover:border-violet-900 focus:border-slate-300">
+      Click Me
+    </button>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Focus Visible</p>
+  <div
+    class="card mb-0 p-10 flex items-start focus-visible:border-slate-400 :bg-violet-500 space-y-2 max-w-sm focus-within:border-sky-500">
+    <div class="bg-violet-500 rounded-lg h-10 w-10 group-aria-selected:bg-violet-800"></div>
+    <p class="text-slate-500 group-aria-selected:text-slate-200">Lorem ipsum dolor sit amet, consectetur
+      adipisicing
+      elit.
+      Adipisci,
+      nulla!</p>
+    <button
+      class="btn bg-violet-600 hover:bg-violet-900 border border-violet-600 hover:border-violet-900 focus:border-slate-300">
+      Click Me
+    </button>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Active</p>
+  <button
+    class="btn bg-violet-600 hover:bg-violet-900 border border-violet-600 hover:border-violet-900 focus:border-slate-300 active:shadow-md shadow-slate-500">
+    Click Me
+  </button>
+
+  <p class="text-slate-500 text-lg mt-10">Visited</p>
+  <a href="https://google.com"
+     class="btn bg-violet-600 visited:bg-green-600 visited:hover:bg-green-900 hover:bg-violet-900 border border-violet-600 hover:border-violet-900 focus:border-slate-300 active:shadow-md shadow-slate-500">
+    Click Me
+  </a>
+
+  <p class="text-slate-500 text-lg mt-10">Target</p>
+  <div id="lorem"
+       class="card mb-0 p-10 flex space-y-2 max-w-sm target:border-green-500">
+    <p class="text-slate-500">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Adipisci, nulla!</p>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">First</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <ul class="list-disc text-slate-500">
+      <li class="first:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="first:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="first:text-slate-300">Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Last</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <ul class="list-disc text-slate-500">
+      <li class="last:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="last:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="last:text-slate-300">Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Only</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <ul class="list-disc text-slate-500">
+      <li class="only:text-slate-300">Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Odd</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <ul class="list-disc text-slate-500">
+      <li class="odd:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="odd:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="odd:text-slate-300">Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Even</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <ul class="list-disc text-slate-500">
+      <li class="even:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="even:text-slate-300">Lorem ipsum dolor sit amet</li>
+      <li class="even:text-slate-300">Lorem ipsum dolor sit amet</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">First of that type</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <h2 class="text-sm text-slate-500 first-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 first-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 first-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 first-of-type:text-slate-300">This is header 2</h2>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Last of that type</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <h2 class="text-sm text-slate-500 last-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 last-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 last-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 last-of-type:text-slate-300">This is header 2</h2>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Lsat of that type</p>
+  <div
+    class="card mb-0 p-10 max-w-sm">
+    <h2 class="text-sm text-slate-500 only-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 only-of-type:text-slate-300">This is header 2</h2>
+    <p class="text-sm text-slate-500 only-of-type:text-slate-300">This is paragraph</p>
+    <h2 class="text-sm text-slate-500 only-of-type:text-slate-300">This is header 2</h2>
+    <h2 class="text-sm text-slate-500 only-of-type:text-slate-300">This is header 2</h2>
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Empty</p>
+  <div
+    class="card mb-0 p-10 max-w-sm empty:hidden">
+  </div>
+
+  <p class="text-slate-500 text-lg mt-10">Disabled</p>
+  <label class="flex space-x-5 items-center">
+    <input type="checkbox" class="input peer" disabled checked>
+    <span class="text-slate-500 peer-disabled:text-red-500">Agree</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Enabled</p>
+  <label class="flex space-x-5 items-center">
+    <input type="checkbox" class="input peer" checked>
+    <span class="text-slate-500 peer-enabled:text-green-500">Agree</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Checked</p>
+  <label class="flex space-x-5 items-center">
+    <input type="checkbox" class="input peer" checked>
+    <span class="text-slate-500 peer-checked:content-['Please agree']">Agree</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Indeterminate</p>
+  <label class="flex space-x-5 items-center">
+    <input type="checkbox" class="input peer" id="indeterminate-checkbox" checked>
+    <span class="text-slate-500 peer-indeterminate:text-sky-500">Agree</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Default</p>
+  <label class="flex space-x-5 items-center">
+    <input type="checkbox" class="input peer" checked>
+    <span class="text-slate-500 peer-default:text-amber-500">Agree</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Required</p>
+  <label class="flex">
+    <input type="text" class="input focus:outline-none focus:border-sky-500 mt-10 peer" required>
+    <span class="absolute text-slate-500 peer-required:text-red-400">Email</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Valid</p>
+  <label class="flex">
+    <input type="email"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 valid:border-green-500 invalid:border-red-500"
+           value="example@gmailcom" required>
+    <span class="absolute text-slate-500">Email</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Invalid</p>
+  <label class="flex">
+    <input type="email"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 invalid:border-red-500"
+           value="example.com" required>
+    <span class="absolute text-slate-500">Email</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">In-Range</p>
+  <label class="flex">
+    <input type="number" min="0" max="100"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 in-range:border-green-500"
+           value="59">
+    <span class="absolute text-slate-500">Age</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Out-Of-Range</p>
+  <label class="flex">
+    <input type="number" min="0" max="100"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 out-of-range:border-red-500"
+           value="182">
+    <span class="absolute text-slate-500">Age</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Placeholder-shown</p>
+  <label class="flex">
+    <input type="email"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 peer"
+           placeholder="email@example.com">
+    <span class="absolute text-slate-500 peer-placeholder-shown:hidden">Email</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Autofill</p>
+  <label class="flex">
+    <input type="email"
+           class="input focus:outline-none focus:border-sky-500 mt-10 text-slate-400 autofill:border-yellow-400 autofill:bg-transparent">
+    <span class="absolute text-slate-500">Email</span>
+  </label>
+
+  <p class="text-slate-500 text-lg mt-10">Read-only</p>
+  <label class="flex">
+    <input type="email"
+           class="input focus:outline-none mt-10 text-slate-400 read-only:border-yellow-300"
+           readonly value="your.email@gmail.com">
+    <span class="absolute text-slate-500">Email</span>
+  </label>
+</div>
+
+<script>
+  const indeterminateCheckbox = document.getElementById('indeterminate-checkbox');
+  indeterminateCheckbox.indeterminate = true;
+</script>
+</body>
+</html>

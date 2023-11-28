@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+
+<!-- Container -->
+<div class="min-h-screen flex items-center justify-center bg-cyan-50">
+
+  <!-- Card -->
+  <div class="flex flex-col m-3 p-6 space-y-10 shadow-2xl rounded-3xl bg-white md:p-40">
+
+    <!-- Navigation -->
+    <div class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-8 md:justify-end md:mb-24">
+      <div class="group">
+        <a href="#">Vector</a>
+        <div class="mx-2 mt-2 border-b-2 border-black opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <a href="#">Illustration</a>
+        <div class="mx-2 mt-2 border-b-2 border-black opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <a href="#">Images</a>
+        <div class="mx-2 mt-2 border-b-2 border-black opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <a href="#">Icons</a>
+        <div class="mx-2 mt-2 border-b-2 border-black opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex flex-col justify-between space-y-5 md:space-y-0 md:flex-row">
+
+      <!-- Search -->
+      <div class="flex justify-between border-b">
+        <input type="text"
+               class="py-4 ml-6 md:w-80 placeholder:font-thin mr-6 focus:outline-none"
+               placeholder="Search">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 text-gray-300 duration-200 hover:scale-110"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"/>
+            <circle cx="10"
+                    cy="10"
+                    r="7"/>
+            <line x1="21"
+                  y1="21"
+                  x2="15"
+                  y2="15"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Upload -->
+      <button
+        class="px-14 font-normal text-lg py-3 bg-black text-white border border-black hover:bg-white hover:text-black shadow-lg rounded-lg duration-150">
+        Upload
+      </button>
+    </div>
+
+    <!-- Images --->
+    <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image1.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image2.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image3.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image4.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image5.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Card -->
+      <div class="relative group">
+        <img src="./images/image6.jpg"
+             alt="Image"
+             class="w-80">
+        <div
+          class="flex justify-between absolute p-4 bottom-0 left-0 right-0 bg-black bg-opacity-40 opacity-0 text-white group-hover:opacity-100 duration-200">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/bookmark.svg"
+                 alt="Bookmark"
+                 class="w-6"
+            >
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!--&lt;!&ndash; Container &ndash;&gt;-->
+  <!--<div class="min-h-screen flex items-center justify-center bg-emerald-100/40">-->
+
+  <!--  &lt;!&ndash; Gallery Card &ndash;&gt;-->
+  <!--  <div class="flex flex-col rounded-2xl shadow-xl space-y-10 p-6 my-4 bg-white md:p-40">-->
+
+  <!--    &lt;!&ndash; Navigation &ndash;&gt;-->
+  <!--    <nav class="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:space-x-8 md:justify-end">-->
+  <!--      <a href="#"-->
+  <!--         class="group">-->
+  <!--        <span>Vector</span>-->
+  <!--        <div class="mt-3 mx-2 border-t-2 border-transparent group-hover:border-black duration-500"></div>-->
+  <!--      </a>-->
+  <!--      <a href="#"-->
+  <!--         class="group">-->
+  <!--        <span>Illustrations</span>-->
+  <!--        <div class="mt-3 mx-2 border-t-2 border-transparent group-hover:border-black duration-500"></div>-->
+  <!--      </a>-->
+  <!--      <a href="#"-->
+  <!--         class="group">-->
+  <!--        <span>Images</span>-->
+  <!--        <div class="mt-3 mx-2 border-t-2 border-transparent group-hover:border-black duration-500"></div>-->
+  <!--      </a>-->
+  <!--      <a href="#"-->
+  <!--         class="group">-->
+  <!--        <span>Icons</span>-->
+  <!--        <div class="mt-3 mx-2 border-t-2 border-transparent group-hover:border-black duration-500"></div>-->
+  <!--      </a>-->
+  <!--    </nav>-->
+
+  <!--    &lt;!&ndash; Actions &ndash;&gt;-->
+  <!--    <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-28 md:mt-[100px]">-->
+
+  <!--      &lt;!&ndash; Search &ndash;&gt;-->
+  <!--      <div class="flex-auto flex border-b border-slate-200 px-6">-->
+  <!--        <input type="text"-->
+  <!--               class="w-full py-4  focus:decoration-none placeholder:text-slate-400"-->
+  <!--               placeholder="Search"/>-->
+  <!--        <button>-->
+  <!--          <svg-->
+  <!--            xmlns="http://www.w3.org/2000/svg"-->
+  <!--            class="w-8 text-gray-300 duration-200 hover:scale-110"-->
+  <!--            viewBox="0 0 24 24"-->
+  <!--            stroke-width="1.5"-->
+  <!--            stroke="currentColor"-->
+  <!--            fill="none"-->
+  <!--            stroke-linecap="round"-->
+  <!--            stroke-linejoin="round"-->
+  <!--          >-->
+  <!--            <path stroke="none"-->
+  <!--                  d="M0 0h24v24H0z"-->
+  <!--                  fill="none"/>-->
+  <!--            <circle cx="10"-->
+  <!--                    cy="10"-->
+  <!--                    r="7"/>-->
+  <!--            <line x1="21"-->
+  <!--                  y1="21"-->
+  <!--                  x2="15"-->
+  <!--                  y2="15"/>-->
+  <!--          </svg>-->
+  <!--        </button>-->
+  <!--      </div>-->
+
+  <!--      &lt;!&ndash; Upload &ndash;&gt;-->
+  <!--      <button-->
+  <!--        class="px-16 py-3 bg-black text-white border border-black hover:shadow-lg hover:bg-white hover:text-black rounded-lg duration-150">Upload-->
+  <!--      </button>-->
+  <!--    </div>-->
+
+  <!--    &lt;!&ndash; Images &ndash;&gt;-->
+  <!--    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">-->
+  <!--      <img src="images/image1.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--      <img src="images/image2.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--      <img src="images/image3.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--      <img src="images/image4.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--      <img src="images/image5.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--      <img src="images/image6.jpg"-->
+  <!--           alt=""-->
+  <!--           class="w-72">-->
+  <!--    </div>-->
+
+  <!--  </div>-->
+
+
+  <!--</div>-->
+
+</body>
+</html>

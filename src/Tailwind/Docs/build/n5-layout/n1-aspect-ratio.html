@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet"
+          href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#0f172a] p-20">
+
+    <h5 class="label">Defined aspect ratio</h5>
+    <div class="card w-30 w-full h-[500px]">
+        <iframe class="aspect-video h-full"
+                src="https://www.youtube.com/embed/ft30zcMlFao"
+                title="Learn Tailwind CSS – Course for Beginners"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
+
+    <h5 class="label">Custom aspect ratio</h5>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1573995975633-faee0123f31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+             alt="Greenland"
+             class="aspect-[8/2] object-cover">
+    </div>
+
+    <h5 class="label">Aspect ratio in states</h5>
+    <div class="card flex flex-row items-center justify-center group hover:flex-col gap-5">
+
+        <div class="flex-1 transition duration-200 rounded-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1573995975633-faee0123f31f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                 alt="Greenland photo" class="object-cover group-hover:aspect-[8/2]">
+        </div>
+
+        <p class="flex-1 text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque aut
+            corporis, dolorem
+            ducimus eaque inventore
+            necessitatibus nulla obcaecati veniam. Ad, aliquid amet at autem blanditiis corporis, culpa dignissimos
+            doloremque enim error fugit nam natus non officiis praesentium quam quasi quo quos rem repellendus soluta
+            vitae
+            voluptatibus? Libero repellat, saepe! Distinctio dolorum id sint velit. Accusantium eaque eligendi magnam
+            molestiae neque nobis non officiis, quod? Debitis dolore error ipsum labore officia quidem. Accusantium
+            architecto autem cum hic laboriosam odit quasi ut, voluptate. Dolorem exercitationem hic placeat sint
+            temporibus. Architecto delectus esse magni, minima porro quae quam quos sequi sunt temporibus!</p>
+    </div>
+
+</body>
+
+</html>

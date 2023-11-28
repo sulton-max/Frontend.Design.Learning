@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .ficon {
+    @apply hover:bg-green-400 duration-300;
+  }
+}

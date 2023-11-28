@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .label {
+    @apply self-start text-white font-bold;
+  }
+
+  .card {
+    @apply flex flex-col p-10 mb-10 items-center justify-center border border-gray-800 rounded-2xl overflow-hidden;
+  }
+
+  .btn {
+    @apply p-5 py-2 rounded-full text-white font-bold;
+  }
+
+  .div {
+    @apply bg-slate-500 h-[0.5px] w-full;
+  }
+
+  .li {
+    @apply flex bg-gray-500 p-5 w-full;
+  }
+
+  .p-first {
+    @apply text-sm font-medium text-slate-200;
+  }
+
+  .p-last {
+    @apply text-sm text-slate-600 truncate;
+  }
+
+  .pfp {
+    @apply h-10 w-10 rounded-full;
+  }
+
+  .input {
+    @apply block mt-1 w-full px-3 py-2 border border-slate-600 rounded-lg text-sm placeholder-slate-400 bg-gray-500 bg-opacity-20;
+  }
+
+  .before-content {
+    @apply before:absolute;
+  }
+
+  .before-centered {
+    @apply before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2;
+  }
+
+  .centered {
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Mulish', 'sans-serif'],
+          mono: ['Rokkitt', 'monospace']
+        }
+      }
+    }
+  </script>
+  <title>Login Modal</title>
+</head>
+<body>
+
+
+<!-- Container -->
+<div class="min-h-screen flex items-center justify-center bg-rose-50">
+
+  <!-- Login Modal -->
+  <div class="flex rounded-xl shadow-2xl m-6 bg-white font-sans relative md:m-0">
+
+    <!-- Content -->
+    <div class="p-6 md:p-20">
+
+      <!-- Header -->
+      <h3 class="text-3xl font-mono font-bold">Log In</h3>
+      <p class="text-gray-400 mt-6 font-light max-w-sm">Log in to your account to upload or download pictures, videos
+        or
+        music</p>
+
+      <!-- Actions -->
+      <input type="email"
+             class="w-full mt-10 border p-6 placeholder:font-light rounded-xl focus:outline-none"
+             placeholder="Enter your email address">
+      <div class="flex flex-col space-y-6 items-center justify-between mt-6 md:flex-row md:space-y-0">
+        <a href="#"
+           class="inline-block text-cyan-700 font-light">Forgot password</a>
+        <button
+          class="w-full md:w-auto p-6 px-10 bg-cyan-700 text-white flex shadow-sm shadow-cyan-100 rounded items-center space-x-2 justify-center hover:bg-opacity-90 hover:-translate-y-0.5 hover:shadow-lg duration-150">
+          <span>Next</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-7"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="13" y1="18" x2="19" y2="12" />
+            <line x1="13" y1="6" x2="19" y2="12" />
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- SOO -->
+      <div class="mt-10 border-b"></div>
+      <p class="py-6 font-thin text-sm text-gray-400 text-center">or log in with</p>
+      <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+        <button
+          class="flex items-center justify-center space-x-4 py-3 px-10 border shadow-sm hover:-translate-y-0.5 duration-200 hover:shadow-lg">
+          <img src="./images/facebook.png"
+               alt="" class="w-8">
+          <span class="font-thin">Facebook</span>
+        </button>
+        <button
+          class="flex items-center justify-center space-x-4 py-3 px-10 border shadow-sm hover:-translate-y-0.5 duration-200 hover:shadow-lg">
+          <img src="./images/google.png"
+               alt="" class="w-8">
+          <span class="font-thin">Google</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <img src="./images/image.jpg"
+         class="w-[400px] hidden md:block"
+         alt="Image">
+
+    <!-- Close -->
+    <div
+      class="group absolute w-10 h-10 top-4 right-4 bg-slate-200 rounded-full flex items-center justify-center cursor-pointer hover:bg-slate-400 duration-150">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6 text-black group-hover:text-gray-600"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>a
+    </div>
+
+  </div>
+
+</div>
+
+
+<!--&lt;!&ndash; Container &ndash;&gt;-->
+<!--<div class="min-h-screen flex items-center justify-center bg-slate-100">-->
+
+<!--  &lt;!&ndash; Login Modal &ndash;&gt;-->
+<!--  <div class="flex bg-white rounded-xl shadow-xl  relative font-sans">-->
+
+<!--    &lt;!&ndash; Content &ndash;&gt;-->
+<!--    <div class="flex-1 flex flex-col p-6 md:p-20 space-y-8">-->
+
+<!--      &lt;!&ndash; Header &ndash;&gt;-->
+<!--      <h3 class="text-3xl font-mono font-bold">Log In</h3>-->
+<!--      <p class="font-thin max-w-sm">Log in to your account to upload or download pictures, videos or music</p>-->
+
+<!--      &lt;!&ndash; Log In &ndash;&gt;-->
+<!--      &lt;!&ndash; Email Address &ndash;&gt;-->
+<!--      <input type="email"-->
+<!--             class="w-full p-6 placeholder:font-thin border"-->
+<!--             placeholder="Enter your email address">-->
+
+<!--      &lt;!&ndash; Actions &ndash;&gt;-->
+<!--      <div class="flex flex-col items-center space-y-6 md:flex-row md:space-y-0 md:justify-between">-->
+<!--        <a href="#"-->
+<!--           class="inline-block text-slate-500 font-thin">Forgot password</a>-->
+<!--        <button-->
+<!--          class="w-full md:w-fit bg-cyan-700 text-white p-6 px-14 flex items-center justify-center space-x-4 rounded-md hover:bg-cyan-900 hover:-translate-y-0.5 duration-150">-->
+<!--          <span>Next</span>-->
+<!--          <svg-->
+<!--            xmlns="http://www.w3.org/2000/svg"-->
+<!--            class="w-7"-->
+<!--            viewBox="0 0 24 24"-->
+<!--            stroke-width="1.5"-->
+<!--            stroke="#ffffff"-->
+<!--            fill="none"-->
+<!--            stroke-linecap="round"-->
+<!--            stroke-linejoin="round"-->
+<!--          >-->
+<!--            <path stroke="none"-->
+<!--                  d="M0 0h24v24H0z"-->
+<!--                  fill="none"/>-->
+<!--            <line x1="5"-->
+<!--                  y1="12"-->
+<!--                  x2="19"-->
+<!--                  y2="12"/>-->
+<!--            <line x1="13"-->
+<!--                  y1="18"-->
+<!--                  x2="19"-->
+<!--                  y2="12"/>-->
+<!--            <line x1="13"-->
+<!--                  y1="6"-->
+<!--                  x2="19"-->
+<!--                  y2="12"/>-->
+<!--          </svg>-->
+<!--        </button>-->
+<!--      </div>-->
+
+<!--      <div class="border-b border-slate-300"></div>-->
+<!--      <span class="text-sm text-slate-500 text-center">or log in with</span>-->
+
+<!--      &lt;!&ndash; SSO &ndash;&gt;-->
+<!--      <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-4">-->
+
+<!--        <button-->
+<!--          class="flex items-center justify-center space-x-4 border border-slate-300 text-lg font-thin shadow-sm w-full p-2 hover:-translate-y-0.5 hover:shadow-lg duration-200">-->
+<!--          <img src="./images/facebook.png"-->
+<!--               alt=""-->
+<!--               class="w-10">-->
+<!--          <span>Facebook</span>-->
+<!--        </button>-->
+
+<!--        <button-->
+<!--          class="flex items-center justify-center space-x-4 border border-slate-300 text-lg font-thin shadow-sm w-full p-2 hover:-translate-y-0.5 hover:shadow-lg duration-200">-->
+<!--          <img src="./images/google.png"-->
+<!--               alt=""-->
+<!--               class="w-10">-->
+<!--          <span>Google</span>-->
+<!--        </button>-->
+
+
+<!--      </div>-->
+
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Image &ndash;&gt;-->
+<!--    <div class="flex-1 max-h-80">-->
+<!--      <img src="./images/image.jpg"-->
+<!--           alt=""-->
+<!--           class="object-contain"/>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Close button &ndash;&gt;-->
+<!--    <button class="absolute top-4 right-4 bg-slate-100 w-10 h-10 rounded-full flex justify-center items-center">-->
+<!--      <svg-->
+<!--        xmlns="http://www.w3.org/2000/svg"-->
+<!--        class="w-6 h-6 text-black group-hover:text-gray-600"-->
+<!--        viewBox="0 0 24 24"-->
+<!--        stroke-width="1.5"-->
+<!--        stroke="currentColor"-->
+<!--        fill="none"-->
+<!--        stroke-linecap="round"-->
+<!--        stroke-linejoin="round"-->
+<!--      >-->
+<!--        <path stroke="none"-->
+<!--              d="M0 0h24v24H0z"-->
+<!--              fill="none"/>-->
+<!--        <line x1="18"-->
+<!--              y1="6"-->
+<!--              x2="6"-->
+<!--              y2="18"/>-->
+<!--        <line x1="6"-->
+<!--              y1="6"-->
+<!--              x2="18"-->
+<!--              y2="18"/>-->
+<!--      </svg>-->
+<!--    </button>-->
+
+<!--  </div>-->
+<!--</div>  -->
+
+
+</body>
+</html>

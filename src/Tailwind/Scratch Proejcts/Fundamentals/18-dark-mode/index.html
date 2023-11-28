@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dark Mode</title>
+    <script>
+      tailwind.config = {
+        darkMode: 'class'
+      }
+    </script>
+  </head>
+  <body>
+  <div class="container mx-auto mt-10 bg-white rounded-xl px-6 py-6 shadow-xl dark:bg-slate-900">
+    <h3 class="text-slate-900 dark:text-white font-medium tracking-tight">Lorem ipsum dolor sit amet.</h3>
+    <p class="text-slate-500 dark:text-slate-400 mt-2text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Autem consequatur, deleniti illo qui suscipit vero voluptas. Ab animi corporis ea fugit. Accusamus ad alias error eum expedita hic ipsum veniam.</p>
+  </div>
+
+    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+  </body>
+</html>
+
+<!-- Credit for toggle button style
+https://tailwindcomponents.com/component/toggle-switch
+ -->

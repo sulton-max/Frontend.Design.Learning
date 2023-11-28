@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body class="bg-[#0f172a] p-20">
+
+<h5 class="label">Block & Inline</h5>
+<div class="card">
+    <div class="max-w-[250px] text-slate-500">
+        When controlling the flow of text, using the CSS property
+        <span class="inline text-slate-400 bg-gray-500 bg-opacity-20">display: inline</span>
+        will cause the text inside the element to wrap normally.
+
+        While using the property <span class="inline-block text-slate-400 bg-gray-500 bg-opacity-20">display: inline-block</span>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+
+        Lastly, using the property <span class="block text-slate-400 bg-gray-500 bg-opacity-20">display: block</span>
+        will put the element on its own line and fill its parent.
+    </div>
+</div>
+
+<h5 class="label">Flow root</h5>
+<div class="card p-4 text-slate-500">
+    <div class="flow-root">
+        <div class="my-4">Well, let me tell you something, ...</div>
+    </div>
+    <div class="flow-root">
+        <div class="my-4">Sure, go ahead, laugh if you want...</div>
+    </div>
+</div>
+
+<h5 class="label">Flex</h5>
+<div class="card flex flex-row gap-5 items-center justify-center">
+    <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+         alt="" class="h-12 w-12 rounded-full">
+    <div>
+        <p class="text-slate-300 font-bold text-lg">John Doe</p>
+        <p class="text-slate-500 font-medium text-lg">Technical Advisor</p>
+    </div>
+</div>
+
+<h5 class="label">Inline flex</h5>
+<div class="card text-slate-500">
+    <p class="max-w-sm">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ex exercitationem officia porro praesentium,
+        quam repudiandae veritatis voluptatibus? Assumenda cupiditate debitis
+        <span class="inline-flex items-start gap-[5px]">
+                <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+                     alt="" class="w-[15px] rounded-full">
+            <span class="text-slate-300 font-lights text-sm">John Doe</span>
+        </span>
+        dicta dolorem doloremque earum harum
+    </p>
+</div>
+
+<h5 class="label">Grid</h5>
+<div class="card grid grid-cols-3 gap-10 text-slate-500">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+    <div class="card">7</div>
+</div>
+
+<h5 class="label">Inline Grid</h5>
+<div class="card">
+
+<span class="text-white">
+    Grid
+    <span class="inline-grid grid-cols-3 gap-1">
+    <span class="bg-blue-500 px-2 rounded-md">1</span>
+    <span class="bg-blue-500 px-2  rounded-md">2</span>
+    <span class="bg-blue-500 px-2 rounded-md">3</span>
+    <span class="bg-blue-500 px-2  rounded-md">4</span>
+    <span class="bg-blue-500 px-2  rounded-md">5</span>
+    <span class="bg-blue-500 px-2  rounded-md">6</span>
+</span>
+</span>
+</div>
+
+<h5 class="label">Contents</h5>
+<div class="card">
+    <div class="flex flex-row text-white gap-5">
+        <div class="bg-blue-500 p-2 px-[5rem] rounded-md">1</div>
+        <div class="contents text-white">
+            <div class="bg-blue-500 p-2 px-[5rem] rounded-md">2</div>
+            <div class="bg-blue-500 p-2 px-[5rem] rounded-md">3</div>
+            <div class="bg-blue-500 p-2 px-[5rem] rounded-md">4</div>
+        </div>
+    </div>
+</div>
+
+<h5 class="label">Table</h5>
+<div class="card">
+    <div class="table w-full">
+        <div class="table-header-group text-slate-500 font-bold">
+            <div class="table-row h-10">
+                <div class="table-cell text-left">Song</div>
+                <div class="table-cell text-left">Artist</div>
+                <div class="table-cell text-left">Year</div>
+            </div>
+        </div>
+        <div class="table-row-group text-slate-300 font-medium">
+            <div class="table-row h-10">
+                <div class="table-cell">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+                <div class="table-cell">Malcolm Lockyer</div>
+                <div class="table-cell">1961</div>
+            </div>
+            <div class="table-row h-10">
+                <div class="table-cell">Witchy Woman</div>
+                <div class="table-cell">The Eagles</div>
+                <div class="table-cell">1972</div>
+            </div>
+            <div class="table-row h-10">
+                <div class="table-cell">Shining Star)</div>
+                <div class="table-cell">Earth, Wind, and Fire</div>
+                <div class="table-cell">1975</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h5 class="label">Hidden</h5>
+<div class="card">
+    <div class="flex flex-row text-white gap-5">
+        <div class="bg-blue-500 p-2 px-[5rem] rounded-md">1</div>
+        <div class="hidden bg-blue-500 p-2 px-[5rem] rounded-md">2</div>
+        <div class="hidden bg-blue-500 p-2 px-[5rem] rounded-md">3</div>
+        <div class="bg-blue-500 p-2 px-[5rem] rounded-md">4</div>
+    </div>
+</div>
+
+
+</body>
+</html>
